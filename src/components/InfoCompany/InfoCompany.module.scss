@@ -1,0 +1,151 @@
+
+
+.Info {
+	display: flex;
+	flex-direction: column;
+	padding-top: 88px;
+	padding-bottom: 70px;
+
+	@media screen and (max-width: 768px) {
+		padding-bottom: 20px;
+	}
+
+	@media screen and (max-width: 414px) {
+		padding-bottom: 50px;
+	}
+
+	@media screen and (max-width: 375px) {
+		padding-bottom: 50px;
+	}
+}
+
+.Title {
+	display: flex;
+	column-gap: 10px;
+	width: 35%;
+	padding: 8px 12px;
+	border-radius: 6px;
+	background: radial-gradient(107.69% 100% at 50% 0%, #131A2E 0%, #111624 100%);
+	color: #4ACDFE;
+	font-family: "Inter";
+	border: none;
+
+	@media screen and (max-width: 550px) {
+		height: 30px;
+		font-size: 12px;
+	}
+
+	@media screen and (max-width: 414px) {
+		width: 50%;
+	}
+	@media screen and (max-width: 375px) {
+		width: 50%;
+	}
+}
+
+.Subtitle {
+	color: #D5EAFF;
+	font-family: "Inter";
+	font-size: 72px;
+	font-weight: 465;
+	line-height: 80px; 
+	letter-spacing: -1.44px;
+	width: 70%;
+	margin-top: 24px;
+
+	@media screen and (max-width: 1024px) {
+		font-size: 52px;
+		line-height: 70px;
+	}
+
+	@media screen and (max-width: 768px) {
+		font-size: 50px;
+		line-height: 65px;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 40px;
+		line-height: 55px;
+	}
+	@media screen and (max-width: 414px) {
+		font-size: 25px;
+		line-height: 30px;
+	}
+	@media screen and (max-width: 375px) {
+		font-size: 25px;
+		line-height: 30px;
+	}
+}
+
+.Inner {
+	display: flex;
+	position: absolute;
+	bottom: -20px;
+	margin-top: 48px;
+}
+
+.Button {
+	width: 106px;
+	height: 46px;
+	border-radius: 0px 6px 6px 0px;
+	border: 1px solid rgba(255, 255, 255, 0.40);
+	background: radial-gradient(100.04% 100% at 50% 0%, #66CBF9 0%, #0FB5FF 100%);
+	border: none;
+	outline: none;
+	color: #08090B;
+	font-size: 18px;
+	font-weight: 500;
+
+	@media screen and (max-width: 414px) {
+		width: 90px;
+		height: 45px;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 90px;
+		height: 45px;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.TypeEmail {
+	width: 270px;
+	height: 46px;
+	padding-left: 40px;
+	//padding: 10px 24px 10px 16px;
+	border-radius: 6px 0px 0px 6px;
+	//border: 1px solid rgba(255, 255, 255, 0.40);
+	background: radial-gradient(100.04% 100% at 50% 0%, #26314E 0%, #252B3D 100%);
+	border: none;
+	outline: none;
+	color: #6D799C;
+
+	@media screen and (max-width: 414px) {
+		width: 200px;
+		height: 45px;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 200px;
+		height: 45px;
+	}
+}
+
+.InnerType {
+	position: relative;
+}
+
+.IconItem {
+	position: absolute;
+	left: 10px;
+	top: 12px;
+}
+
+.Bg {
+	position: absolute;
+	top: 30px;
+	left: 0;
+}

@@ -1,0 +1,89 @@
+.Container {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.TableWrapper {
+  background: #0B0F15;
+  padding-top: 100px;
+  padding-bottom: 88px;
+	border-top: 1px solid rgba(37, 44, 65, 1);
+}
+
+.Table {
+  width: 100%;
+  border: 1px solid #323746;
+  border-radius: 16px;
+  background: radial-gradient(100.04% 100% at 50% 0%, #26314E 0%, #131820 0.01%, #0F151E 100%);
+
+
+}
+
+
+.InnerTable {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 240px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
+  color: #6D799C;
+  font-weight: 500;
+  font-family: "Inter";
+  border-bottom: 1px solid #323746;
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		padding-left: 20px;
+		padding-right: 150px;
+	}
+
+	@media screen and (max-width: 600px){
+		padding-left: 20px;		
+		padding-right: 30px;
+	}
+
+	@media screen and (max-width: 414px) {
+		padding-right: 10px;
+		padding-left: 5px;
+	}
+	@media screen and (max-width: 375px) {
+		padding-right: 10px;
+		padding-left: 5px;
+	}
+}
+
+
+.InnerSubtitle {
+  display: flex;
+  column-gap: 120px;
+
+	@media screen and (max-width: 768px) {
+		column-gap: 50px;
+	}
+
+	@media screen and (max-width: 600px) {
+		column-gap: 25px;
+	}
+}
+
+
+.Button {
+  width: 100%;
+  padding: 10px 24px;
+  border-radius: 8px;
+  border: none;
+  background: radial-gradient(100.04% 100% at 50% 0%, #26314E 0%, #1E253C 100%);
+  color: white;
+  font-family: "Inter";
+  margin-top: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+

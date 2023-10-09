@@ -1,0 +1,148 @@
+.Header {
+	background: #08090B;
+	margin-top: 32px;
+	// padding-top: 28px;
+	// padding-bottom: 27px;
+}
+
+.Container {
+	width: 95%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.Logo {
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+
+	@media screen and (max-width: 768px) {
+		column-gap: 5px;
+	}
+
+	img {
+		@media screen and (max-width: 414px) {
+			width: 105px;
+		}
+		@media screen and (max-width: 375px) {
+			width: 105px;
+		}
+	}
+}
+
+.TypeSearch {
+	width: 400px;
+	padding: 10px 24px 10px 36px;
+	border-radius: 6px;
+	background: radial-gradient(100.04% 100% at 50% 0%, #26314E 0%, #252B3D 100%);
+	color: #6D799C;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 500;
+	border: none;
+	outline: none;
+
+	@media screen and (max-width: 1024px) {
+		width: 300px;
+	}
+
+	@media screen and (max-width: 768px) {
+		width: 180px;
+	}
+}
+
+.Line {
+	margin-right: 8px;
+}
+
+.Line::before {
+	display: block;
+	content: "";
+	width: 24px;
+	height: 0px;
+	border: 1px solid #252C41;
+	transform: rotate(90deg);
+}
+
+.Links {
+	display: flex;
+	align-items: center;
+	column-gap: 32px;
+
+	@media screen and (max-width: 1550px) {
+		display: none;
+	}
+}
+
+.Link {
+	color: #464E62;
+	font-family: "Inter";
+	font-size: 18px;
+	font-weight: 445;
+	transition: 0.1s;
+
+	&:hover {
+		color: #5e6782;
+		cursor: pointer;
+	}
+}
+
+.AuthButtons {
+	display: flex;
+	column-gap: 8px;
+}
+
+.Button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 24px;
+	//height: 30px;
+	border-radius: 6px;
+	//border: 1px solid rgba(255, 255, 255, 0.40);
+	background: radial-gradient(100.04% 100% at 50% 0%, #26314E 0%, #1E253C 100%);
+	outline: none;
+	border: none;
+	color: #CEE7FF;
+	font-family: "Inter";
+	font-weight: 500;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.ButtonPrimary {
+	padding: 10px 24px;
+	border: none;
+	border-radius: 6px;
+	// border: 1px solid rgba(255, 255, 255, 0.40);
+	border: none;
+	background: var(--1, radial-gradient(100.04% 100% at 50% 0%, #66CBF9 0%, #0FB5FF 100%));
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.InnerType {
+	position: relative;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
+}
+
+.SearchItem {
+	position: absolute;
+	left: 8px;
+	top: 10px;
+}

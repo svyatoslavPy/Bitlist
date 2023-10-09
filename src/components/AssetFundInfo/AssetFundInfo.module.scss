@@ -1,0 +1,31 @@
+.Wrapper {
+	background: #080A0C;
+	font-family: "Inter";
+	border-top: 1px  solid #252C41;
+	border-bottom: 1px solid rgba(37, 44, 65, 1);
+	padding-top: 88px;
+	padding-bottom: 117px;
+}
+
+.Container {
+	width: 95%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media screen and (max-width: 375px) {
+		padding-left: 20px;
+		padding-right: 20px;		
+	}
+}
+
+
+.Inner {
+	display: flex;
+	//width: 90%;
+	justify-content: center;
+	width: 90%;
+	column-gap: 100px;
+	flex-wrap: wrap;
+}

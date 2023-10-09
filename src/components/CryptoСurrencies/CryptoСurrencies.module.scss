@@ -1,0 +1,170 @@
+.Container {
+	width: 95%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.InnerTable {
+	display: flex;
+	color: #6D799C;
+	font-weight: 500;
+	font-family: "Inter";
+	padding: 24px;	
+	border-bottom: 1px solid #323746;
+	
+}
+
+tr {
+	display: flex;
+	column-gap: 120px;
+
+	@media screen and (max-width: 1024px) {
+		column-gap: 50px;
+	}
+
+	@media screen and (max-width: 768px) {
+		column-gap: 15px;
+	}
+
+	@media screen and (max-width: 600px) {
+		column-gap: 20px;
+	}
+
+	@media screen and (max-width: 414px) {
+		column-gap: 50px;
+	}
+
+	@media screen and (max-width: 375px) {
+		column-gap: 50px;
+	}
+	
+}
+
+.InnerTablePrimary {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+
+	@media screen and (max-width: 600px) {
+		column-gap: 5px;
+	}
+}
+
+.Texts {
+	display: flex;
+	font-family: "Inter";
+	column-gap: 5px;
+	
+}
+
+.Text {
+	color: #C7E1FF;
+}
+
+.TextPrimary {
+	color: #525A71;
+}
+
+.Wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #323746;
+	padding-left: 24px;
+	padding-top: 20px;
+	padding-right: 24px;
+	padding-bottom: 15px;
+
+	&:last-child {
+		border: none;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-left: 13px;
+	}
+
+	@media screen and (max-width: 600px) {
+		display: flex;
+		justify-content: start;
+		flex-direction: column;
+	}
+
+	@media screen and (max-width: 414px)  {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media screen and (max-width: 375px)  {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+
+.Items {
+	display: flex;
+	align-items: center;
+	font-family: "Inter";
+	td {
+		&:first-child {
+			color: #C7E1FF;
+		}
+		// &:nth-child(2) {
+		// 	color: red;
+		// }
+		&:nth-child(3) {
+			color: #C7E1FF;
+
+			@media screen and (max-width: 414px) {
+				display: none;
+			}
+
+			@media screen and (max-width: 375px) {
+				display: none;
+			}
+		}
+	}
+	
+
+	@media screen and (max-width: 1024px) {
+		font-size: 14px;
+	}
+
+	@media screen and (max-width: 600px) {
+		margin-top: 10px;
+	}
+
+	button {
+		width: 82px;
+		color: #2FBDFC;
+		padding: 6px 16px;
+		border-radius: 6px;
+		border: 1px solid #2FBDFC;
+		background: transparent;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 70px;
+		}
+	}
+}
+
+
+.Icon {
+	width: 36px;
+}
+
+.Negative {
+	color: #F94B55;
+}
+
+.Positive {
+	color: #58F0A7;
+}

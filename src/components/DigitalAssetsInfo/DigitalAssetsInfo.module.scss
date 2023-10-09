@@ -1,0 +1,92 @@
+.Container {
+	width: 95%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+
+.Wrapper {
+	background: #08090B;
+	background-image: url("../../assets/bg-digital.png");
+	background-repeat: no-repeat;
+	background-position: left ;
+	background-size: contain;
+	border-top: 1px solid rgba(37, 44, 65, 1);
+	padding-top: 88px;
+	padding-bottom: 88px;
+	font-family: "Inter";
+	
+}
+
+.Inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 1075px) {
+		display: flex;
+		flex-direction: column;		
+	}
+}
+
+.Title {
+	color: #D5EAFF;
+	font-family: "Inter";
+	font-size: 48px;
+	font-weight: 445;
+	line-height: 64px; /* 133.333% */
+	letter-spacing: -0.96px;
+	width: 70%;
+
+	@media screen and (max-width: 414px) {
+		font-size: 35px;
+		line-height: 45px;
+	}
+	@media screen and (max-width: 375px) {
+		font-size: 35px;
+		line-height: 45px;
+	}
+}
+
+
+.Subtitle {
+	width: 65%;
+	color: #464E62;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 160.023%; 
+	margin-top: 16px;
+}
+
+.Info {
+	display: flex;
+	flex-direction: column;	
+}
+
+
+
+.Picture {
+	background-image: url("../../assets/bg-images.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+
+	@media screen and (max-width: 1075px) {
+		margin-top: 80px;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 440px;
+	}
+
+	@media screen and (max-width: 414px) {
+		width: 300px;
+	}
+
+	@media screen and (max-width: 375px) {
+		width: 300px;
+	}
+}

@@ -1,0 +1,70 @@
+.Wrapper {
+	background: #08090B;
+	// padding-top: 88px;
+	position: relative;
+	background-image: url("../../assets/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: 1px solid rgba(37, 44, 65, 1);
+}
+
+.Container {
+	width: 95%;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.Inner {
+	display: flex;
+	position: relative;
+
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.Diagrams {
+	margin-top: 20px;
+	z-index: 3;
+
+	@media screen and (max-width: 1024px){
+		width: 500px;		 
+	}
+
+	@media screen and (max-width: 768px) {
+		margin-top: 0px;
+		margin-bottom: 70px;
+	}
+
+
+	@media screen and (max-width: 414px) {
+		display: none;
+	}
+
+	@media screen and (max-width: 375px) {
+		display: none;
+	}
+}
+
+.Bg {
+	position: absolute;
+	right: 170px;
+	top: 0px;
+
+	@media screen and (max-width: 1300px) {
+		display: none;
+	}
+}
+
+.Bg2 {
+	position: absolute;
+	right: -150px;
+	bottom: 0px;
+
+	@media screen and (max-width: 1300px) {
+		display: none;
+	}
+}
