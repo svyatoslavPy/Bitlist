@@ -8,10 +8,11 @@ export const AssetFundInfo = () => {
 		<section className={styles.Wrapper}>
 			<div className={styles.Container}>
 				<div className={styles.Inner}>
-					{data.map((item) => {
+					{data.map((item, idx) => {
 						return (
 							<>
 								<AssetFundCard
+									key={idx}
 									image={item.images}
 									title={item.title}
 									subtitle={item.subtitle} />

@@ -1,11 +1,11 @@
 .Wrapper {
 	background: #08090B;
-	// padding-top: 88px;
 	position: relative;
 	background-image: url("../../assets/bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-top: 1px solid rgba(37, 44, 65, 1);
+
 }
 
 .Container {
@@ -16,9 +16,8 @@
 	padding-right: 10px;
 }
 
-.Inner {
+.companyInfoInner {
 	display: flex;
-	position: relative;
 
 	@media screen and (max-width: 768px) {
 		display: flex;
@@ -26,7 +25,7 @@
 	}
 }
 
-.Diagrams {
+.companyDiagrams {
 	margin-top: 20px;
 	z-index: 3;
 
@@ -49,9 +48,9 @@
 	}
 }
 
-.Bg {
+.companyBackground {
 	position: absolute;
-	right: 170px;
+	right: 350px;
 	top: 0px;
 
 	@media screen and (max-width: 1300px) {
@@ -59,9 +58,9 @@
 	}
 }
 
-.Bg2 {
+.companyBackground2 {
 	position: absolute;
-	right: -30px;
+	right: 0px;
 	bottom: 0px;
 
 	@media screen and (max-width: 1300px) {

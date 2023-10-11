@@ -4,11 +4,10 @@ import { useEffect, useState } from 'react';
 
 import { CryptoСurrencies } from '../CryptoСurrencies/CryptoСurrencies';
 import { LoadingCurrencies } from '../LoadingCurrencies/LoadingCurrencies';
+import { API, assets } from './helpers';
 
 export const TableCurrency = () => {
-	const API = "https://api.coinstats.app/public/v1/coins?skip=0&limit=100¤cy=USD";
 	const [crypto, setCrypto] = useState([]);
-	const assets = ["Bitcoin", "Ethereum", "BNB", "BUSD", "Polygon"];
 	const [loading, setLoading] = useState(false);
 
 
@@ -41,7 +40,7 @@ export const TableCurrency = () => {
 		<section className={styles.TableWrapper}>
 			<div className={styles.Container}>
 				<table className={styles.Table}>
-					<tr className={styles.InnerTable}>
+					<thead className={styles.InnerTable}>
 						<tr>
 							<th>
 								Asset
@@ -52,7 +51,7 @@ export const TableCurrency = () => {
 							<th>Change</th>
 							<th>Volume</th>
 						</tr>
-					</tr>
+					</thead>
 					{currency.length > 0 && !loading ?
 						currency.map((item) => {
 							return (

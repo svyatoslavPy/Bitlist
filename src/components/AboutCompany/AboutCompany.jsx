@@ -1,20 +1,20 @@
 import styles from './AboutCompany.module.scss';
 import { Info } from '../InfoCompany/InfoCompany';
 import diagrams from '../../assets/diagrams.svg';
-import bgChart from '../../assets/bg-chart.svg';
-import bgChart2 from '../../assets/bgChart2.svg';
+import companyBg from '../../assets/bg-chart.svg';
+import companyBg2 from '../../assets/bgChart2.svg';
 
 export const AboutCompany = () => {
 	return (
 		<section className={styles.Wrapper}>
 			<div className={styles.Container}>
-				<div className={styles.Inner}>
+				<div className={styles.companyInfoInner}>
 					<Info />
-					<img className={styles.Diagrams} src={diagrams} alt="diagrams" />
-					<img className={styles.Bg} src={bgChart} alt="image" /> 
-					<img className={styles.Bg2} src={bgChart2} alt="image" />
+					<img className={styles.companyDiagrams} src={diagrams} alt="Company Diagrams" />
 				</div>
 			</div>
+			<img className={styles.companyBackground} src={companyBg} alt="Company Background Image" />
+			<img className={styles.companyBackground2} src={companyBg2} alt="Company Background Image 2" />
 		</section>
 	)
 }
